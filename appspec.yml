@@ -1,0 +1,9 @@
+version: 1.0
+os: linux
+files:
+  - source: /
+    destination: /webapps/
+hooks:
+  ApplicationStart:
+    - location: Startup.cs
+      timeout: 3600
