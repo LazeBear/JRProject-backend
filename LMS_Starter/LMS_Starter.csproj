@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\LMS_Starter.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Model\" />
+    <Folder Include="Model\Table\" />
+    <Folder Include="Service\Mail\" />
+    <Folder Include="Service\SMS\" />
+    <Folder Include="Service\DB\" />
+    <Folder Include="Model\DTO\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Sendgrid" Version="9.9.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+   <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.0" />
+   <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" /> 
+</ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20171123075405_restart4.Designer.cs" />
+    <Compile Remove="Migrations\20171123142041_restart.Designer.cs" />
+    <Compile Remove="Migrations\20171123142041_restart.cs" />
+    <Compile Remove="Migrations\20171123142117_restart2.Designer.cs" />
+    <Compile Remove="Migrations\20171123142117_restart2.cs" />
+    <Compile Remove="Migrations\20171123142630_restart3.Designer.cs" />
+    <Compile Remove="Migrations\20171123142630_restart3.cs" />
+    <Compile Remove="Migrations\20171124033103_restart4.Designer.cs" />
+    <Compile Remove="Migrations\20171124033103_restart4.cs" />
+    <Compile Remove="Migrations\20171124033121_restart5.Designer.cs" />
+    <Compile Remove="Migrations\20171125023252_courseToLec2.Designer.cs" />
+    <Compile Remove="Migrations\20171125023252_courseToLec2.cs" />
+    <Compile Remove="Migrations\20171125023505_courseToLec4.Designer.cs" />
+    <Compile Remove="Migrations\20171125023505_courseToLec4.cs" />
+    <Compile Remove="Migrations\20171125073648_courseToLec5.Designer.cs" />
+    <Compile Remove="Migrations\20171125073648_courseToLec5.cs" />
+    <Compile Remove="Migrations\20171125073706_courseToLec6.Designer.cs" />
+    <Compile Remove="Migrations\20171125073706_courseToLec6.cs" />
+    <Compile Remove="Migrations\DBContextModelSnapshot.cs" />
+  </ItemGroup>
+</Project>
